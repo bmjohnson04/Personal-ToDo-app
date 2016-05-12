@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :todo_items
+  resources :articles
   
 
   root 'todo_items#index'
