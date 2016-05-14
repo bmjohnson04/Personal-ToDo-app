@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :todo_items
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
   
 
   root 'todo_items#index'
